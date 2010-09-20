@@ -1,0 +1,5 @@
+  * Circuit for connect TTL/CMOS devices to GPIO input
+  * Software installation ...
+  * Fix missing connection points (dots) in circuits.
+  * Add component part nos.
+  * Signal names is fixed width?

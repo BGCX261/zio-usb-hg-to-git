@@ -1,0 +1,5 @@
+Switches can be connected to GPIO output pins as shown in the
+following circuit. When the switch is not pressed, the input pin is
+internally pulled up to 5V, and reads high. When the switch is
+pressed, the input pin is grounded, and reads low. The code to
+read the switch status is listed below.

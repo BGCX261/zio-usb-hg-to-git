@@ -1,0 +1,4 @@
+LEDs can be easily connected to GPIO output pins as shown in the
+following circuit. When the GPIO output pin is set to high, the LED
+turns on and when the pin is set to low, the LED turns off. The code
+to blink the LED is listed below.

@@ -1,0 +1,6 @@
+A single turn potentiometer in a variable resistor connection can be
+used in volume control applications. The potentiometer is interfaced
+to the Sensor port as shown in the following circuit. The internal
+pull-up and the potentiometer are in voltage divider configuation. The
+voltage drop across the potentiometer is measured by the ADC. The code
+to read the voltage from the sensor input is given below.

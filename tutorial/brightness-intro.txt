@@ -1,0 +1,7 @@
+The brightness of an LED can be controlled by driving the LED using a
+PWM signal. PWM is a digital control technique wherein the processor
+adjusts the duty cycle of a sequence of fixed-width pulses. The LED
+can be interfaced to the PWM port as shown in the following
+circuit. When the duty cycle increases, the ON period of the PWM
+signal increases and the LED brightness increases. The code to control
+the LED brightness is given below.

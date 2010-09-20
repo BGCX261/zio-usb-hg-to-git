@@ -1,0 +1,9 @@
+I2C is a bi-directional two-wire (data and clock) serial bus that
+provides a communication link between integrated circuits. Examples of
+simple I2C-compatible devices found in embedded systems include
+EEPROMs, thermal sensors, and real-time clocks.
+
+I2C IO Expander (PCF8574) provides 8 digitial IO lines that can be
+controlled, through the I2C bus. The IO Expander can be interfaced to
+the I2C port as show in the following circuit. The code to
+access the I2C IO Expander is listed below.

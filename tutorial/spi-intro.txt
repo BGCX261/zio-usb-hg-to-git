@@ -1,0 +1,4 @@
+Serial Peripheral Interface (SPI) is an inexpensive chip
+interconnection bus, popular on circuit boards. SPI devices like the
+SPI EEPROM (93C46) can be interfaced to the SPI port as show in the
+following circuit. The code to access the SPI EEPROM is given below.

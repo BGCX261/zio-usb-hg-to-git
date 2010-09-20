@@ -1,0 +1,17 @@
+ZIO is a IO framework for rapid product development. And as such it
+comes along with an API that can be used to access the IO interfaces
+provided by the board. This document shows how to use the API, to do
+simple tasks, which can then be used as a reference for building
+complex applications.
+
+From the API's stand point, the ZIO motherboard has 5 modules.
+
+  1. GPIO
+  2. I2C
+  3. Sensor
+  4. PWM
+  5. SPI
+
+These modules on the motherboard are accessed through an agent
+software running on the motherboard. The agent software communicates
+with the PC and performs appropriate actions on the modules.
