@@ -4,14 +4,17 @@ provided by the board. This document shows how to use the API, to do
 simple tasks, which can then be used as a reference for building
 complex applications.
 
-From the API's stand point, the ZIO motherboard has 5 modules.
+The ZIO motherboard has 6 modules: `GPIO`, `I2C`, `ADC`, `DAC`, `PWM`
+and `SPI`. Each module is in charge of a set of signals associated
+with the module. The modules and their associated signals is shown in
+the following diagram.
 
-  1. GPIO
-  2. I2C
-  3. Sensor
-  4. PWM
-  5. SPI
+.ZIO Modules and Signals
+image::zio-blocks.png[width=432]
 
 These modules on the motherboard are accessed through an agent
-software running on the motherboard. The agent software communicates
-with the PC and performs appropriate actions on the modules.
+software running on the motherboard. The API communicates with the
+agent and performs actions on the modules. Each module is handled by a
+separate object class in the API. The modules and their corresponding
+classes are described in detail in the following sections.
+

@@ -19,7 +19,7 @@ Controlling LEDs
 include::led-intro.txt[]
 
 .LED Circuit
-image::led.png["LED",width=288]
+image::led.png["LED",width=432]
 
 .LED Blink, Java Code
 ------
@@ -31,15 +31,16 @@ use the API the package has to be imported.
 
 <2> The `Agent` class is used to establish a communication link
 between the host and the board. The device file that corresponds to
-the USB serial port of the ZIO board is passed as argument. Under Linux,
-it is usually `/dev/ttyUSBx`. Under Windows, it is `COMx`.
+the USB serial port of the ZIO board is passed as argument. Under
+Linux, it is usually `/dev/ttyUSBx` or `/dev/ttyACMx`. Under Windows,
+it is `COMx`.
 
 <3> The `GPIO` class is used to control the GPIO module. The `Agent`
 object is passed as argument to the constructor.
 
 <4> The `GPIO` output pin to which the LED is connected.
 
-<5> The pin state can be controlled using the `writeOutputPin`
+<5> The pin state can be controlled using the `writePin`
 method of the `GPIO` class. The first argument is the pin to
 control. The second argument is the value to be set on the pin.
 
@@ -48,7 +49,7 @@ Interfacing Switches
 
 include::switch-intro.txt[]
 
-image::switch.png["Switch",width=288]
+image::switch.png["Switch",width=432]
 
 .Switch Status, Java Code
 ------
@@ -57,37 +58,9 @@ include::code/java/Switch.java.strip[]
 
 <1> The GPIO input pin to which the switch is connected.
 
-<2> The `readInputPin` method of the `GPIO` class can be used to
+<2> The `readPin` method of the `GPIO` class can be used to
 read the pin state. The pin no. is passed as argument. The method
 returns the state of the pin.
-
-The problem with the above approach is that the state of the pin has
-to be periodically polled. If done at high rates, this can cause
-excessive load on the host CPU. This can be avoided by using a
-listener mechanism. A listener `GPIOChangeListener` is registered with
-the GPIO module. Whenever a change occurs in any of the pins, the
-`inputChanged` method of the listener is invoked by the `GPIO` class.
-
-.Switch Status with Notifications, Java Code
-------
-include::code/java/SwitchNotify.java.strip[]
-------
-
-<1> The `inputChanged` method takes an event object as argument. In
-the case of GPIO, it is a `GPIOChangeEvent` object. The event object
-contains information about the event -- the pin in which the change
-occurred, the current state of the pin, etc.
-
-<2> The `inputChanged` method will be called when any of the input
-pins change. This check filters out changes in other pins.
-
-<3> The listener is registered with the `GPIO` object using the
-`addChangeListener` method. The listener instance is passed as an
-argument to the method.
-
-<4> The `waitForEvents` method on the `Agent` object is used to wait
-for events in an infinite loop. And when an event occurs, the
-corresponding callback is invoked.
 
 Interfacing I2C Devices
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -95,7 +68,7 @@ Interfacing I2C Devices
 include::i2c-intro.txt[]
 
 .I2C IO Expander Circuit
-image::io-expander.png["IO Expander",width=288]
+image::io-expander.png["IO Expander",width=432]
 
 .I2C IO Expander, Java Code
 ------
@@ -128,25 +101,25 @@ Interfacing a Potentiometer
 include::pot-intro.txt[]
 
 .Potentiometer Circuit
-image::pot.png["Potentiometer",width=288]
+image::pot.png["Potentiometer",width=432]
 
 .Potentiometer, Java Code
 ------
 include::code/java/Pot.java.strip[]
 ------
 
-<1> The `Sensor` class is used to control Sensor module. As with other
+<1> The `ADC` class is used to control ADC module. As with other
 module objects, the `Agent` object is passed as argument to the
 constructor.
 
-<2> The Sensor input pin to which the pot. is connected.
+<2> The ADC input pin to which the pot. is connected.
 
-<3> The `readPin` method of the `Sensor` class can be used to get the
+<3> The `readPin` method of the `ADC` class can be used to get the
 voltage at the pin. The pin no. is passed as argument to the
 method. The function returns the voltage on the pin as a floating
 point value. In case the raw ADC value is required, `readPinRaw`
 method can be used. The method returns a value between `0x0000` and
-`0xFFFF`. 
+`0xFFFF`.
 
 Note: Even though the ADC is 10-bit, the value is oversampled to
 16-bits, to make the interface future proof.
@@ -157,7 +130,7 @@ Controlling LED Brightness
 include::brightness-intro.txt[]
 
 .LED Brightness Circuit
-image::led-brightness.png["LED Brightness",width=288]
+image::led-brightness.png["LED Brightness",width=432]
 
 .LED Brightness Control, Java Code
 ------
@@ -189,7 +162,7 @@ Interfacing SPI Devices
 include::spi-intro.txt[]
 
 .SPI EEPROM Circuit
-image::spi-eeprom.png["SPI EEPROM Circuit",width=288]
+image::spi-eeprom.png["SPI EEPROM Circuit",width=432]
 
 .SPI EEPROM, Java Code
 ------
@@ -200,15 +173,14 @@ include::code/java/EEPROM.java.strip[]
 is passed as argument to the constructor.
 
 <2> The `GPIO` class is used for controlling the slave select pin. The
-slave select pins available on the SPI port are GPIO output pins 4
-and 5.
+slave select pin available on the SPI header is GPIO pin no. 20.
 
 <3> The `config` method of the `SPI` class is used to configure the
 bus clock frequency, the clock polarity, the clock phase, and the
 data endianess.
 
 <4> The slave select signal is made high while accessing the chip,
-using the GPIO `writeOutputPin` method.
+using the GPIO `writePin` method.
 
 <5> The `writeRead` method of the `SPI` class is used to write / read
 bytes to / from the slave. The bytes to be written is specified as

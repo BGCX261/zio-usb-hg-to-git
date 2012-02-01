@@ -5,5 +5,5 @@ EEPROMs, thermal sensors, and real-time clocks.
 
 I2C IO Expander (PCF8574) provides 8 digitial IO lines that can be
 controlled, through the I2C bus. The IO Expander can be interfaced to
-the I2C port as show in the following circuit. The code to
-access the I2C IO Expander is listed below.
+the I2C module as show in the following circuit. The code to access
+the I2C IO Expander is listed below.

@@ -9,10 +9,10 @@ class LED {
 	int ledPin = 0; // <4>
 	
 	while (true) {
-	    gpio.writeOutputPin(ledPin, 1); // <5>
+	    gpio.writePin(ledPin, 1); // <5>
 	    Thread.sleep(1000);
 	    
-	    gpio.writeOutputPin(ledPin, 0); // <5>
+	    gpio.writePin(ledPin, 0); // <5>
 	    Thread.sleep(1000);
 	}
     }

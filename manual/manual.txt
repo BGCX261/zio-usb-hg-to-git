@@ -46,7 +46,7 @@ types of ports.
   1. GPIO Port
   2. I2C Port
   3. SPI Port
-  4. Sensor Port (Marked as AIN on the ZIO)
+  4. Sensor Port (Marked as AIO on the ZIO)
   5. PWM Port
 
 All the ports are available through RJ12 jacks. The RJ12 is similar to
