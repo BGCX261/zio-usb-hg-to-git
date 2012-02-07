@@ -2,8 +2,8 @@ ZIO Java API
 ==============
 Zilogic Systems
 :Subtitle: Tutorial
-:Date:     May 2009
-:Revision: 1.0
+:Date:     Feb 2012
+:Revision: 1.2
 
 Introduction
 ------------

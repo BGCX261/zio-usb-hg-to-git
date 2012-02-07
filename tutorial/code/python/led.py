@@ -3,7 +3,7 @@ import time
 
 agent = zio.Agent("/dev/ttyUSB0") # <2>
 gpio = zio.GPIO(agent) # <3>
-led_pin = 0 # <4>
+led_pin = 12 # <4>
 
 while True:
     # Turn on the LED

@@ -11,7 +11,7 @@ class Switch {
 	while (true) {
 	    int state;
 
-	    state = gpio.readInputPin(switchPin); // <2>
+	    state = gpio.readPin(switchPin); // <2>
 	    if (state == 1) {
 		System.out.println("Switch Off");
 	    } else {

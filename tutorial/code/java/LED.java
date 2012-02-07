@@ -6,7 +6,7 @@ class LED {
 
 	Agent agent = new Agent("/dev/ttyUSB0"); // <2>
 	GPIO gpio = new GPIO(agent); // <3>
-	int ledPin = 0; // <4>
+	int ledPin = 12; // <4>
 	
 	while (true) {
 	    gpio.writePin(ledPin, 1); // <5>
