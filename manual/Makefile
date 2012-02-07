@@ -1,16 +1,4 @@
-small_images =  rj12.png \
-		sensor0-port.png \
-		sensor1-port.png \
-		sensor2-port.png \
-		sensor3-port.png \
-		gpio0-port.png \
-		gpio1-port.png \
-		i2c-port.png \
-		pwm-signal.png \
-		pwm0-port.png \
-		pwm1-port.png \
-		spi0-port.png \
-		spi1-port.png \
+small_images =  pwm-signal.png \
 	       	led-series.png \
 		relay.png \
 		opto-coupler.png \
@@ -35,11 +23,11 @@ small_images =  rj12.png \
 		pwm-dac.png \
 		port-pin-map.png
 
-large_images = blocks.png h-bridge.png
+large_images = frc10.png frc14.png zio-blocks.png h-bridge.png
 
 tutorial_images = led.png switch.png io-expander.png pot.png led-brightness.png spi-eeprom.png
 
-images = $(small_images) $(tutorial_images) $(large_images) 
+images = $(tutorial_images) $(large_images) 
 
 code = 
 
