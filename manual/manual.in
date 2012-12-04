@@ -887,6 +887,14 @@ TIP: In the following sections, commands that have a `#` (hash)
 prompt, should be executed as `root`. In case of Ubuntu, the command
 should be invoked using `sudo`.
 
+The .deb software packages present on the CD-ROM can be installed using the apt-get command . 
+For this to work, the BSP CD-ROM is to be added as a repository. Insert the BSP CD-ROM and add the CD-ROM as a repository,
+using the following command, before trying to install packages through steps explained in the following sections.
+
+----
+# apt-cdrom add
+----
+
 ZIO Driver
 ^^^^^^^^^^
 
