@@ -43,8 +43,8 @@ images = $(small_images) $(tutorial_images) $(large_images)
 
 code = 
 
-VER-API = 1.2
-VER-CPANEL = 1.2
+VER-API = 1.3
+VER-CPANEL = 1.3
 REL-API  = 1
 REL-CPANEL = 1
 $(small_images): EXPORT_WIDTH=1024
