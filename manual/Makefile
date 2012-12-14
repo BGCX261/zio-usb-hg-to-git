@@ -31,17 +31,27 @@ images = $(tutorial_images) $(large_images)
 
 code = 
 
+VER-API = 1.3
+VER-CPANEL = 1.3
+REL-API  = 1
+REL-CPANEL = 1
 $(small_images): EXPORT_WIDTH=1024
 $(large_images): EXPORT_WIDTH=2048
 
 manual.pdf: STYLE_CLASS = document
 manual.pdf: $(images) $(code)
+manual.pdf: manual.txt
 
 tutorial.pdf: STYLE_CLASS = document
 tutorial.pdf: $(tutorial_images)
 
+manual.txt : manual.in
+	sed  -e "s/@VER-API@/$(VER-API)/g" \
+	-e "s/@VER-CPANEL@/$(VER-CPANEL)/g" \
+	-e "s/@REL-API@/$(REL-API)/g" \
+	-e "s/@REL-CPANEL@/$(REL-CPANEL)/g" $< > $@
 clean:
 	rm -f $(images) *.pdf
+	rm -f manual.txt
 
 include $(STYLE_DIR)/Makefile.rules
-
