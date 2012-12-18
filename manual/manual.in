@@ -850,7 +850,7 @@ $ cd /media/cdrom/software
 # yum --nogpgcheck localinstall zio-java-api-*.rpm # Under Fedora
 -------
 
-.Step 4
+.Step 2
 The `CLASSPATH` environment variable should point to the serial
 library and the ZIO API. A possible command sequence is shown
 below. This can be added to your `.bashrc` file.
@@ -861,7 +861,7 @@ $ export CLASSPATH=$CLASSPATH:/usr/share/java/RXTXcomm.jar
 $ export CLASSPATH=$CLASSPATH:/usr/share/java/zio-java-api.jar
 ------
 
-.Step 4
+.Step 3
 Test your installation using the Java program available on the CD-ROM
 at `software/TestZio.class`. When executed with the following command,
 it will prompt for the serial device file and will then test access to
