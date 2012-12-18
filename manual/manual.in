@@ -836,6 +836,14 @@ following command.
 # usermod -a -G dialout xyz
 ------
 
+In case of Fedora distribution, users should be a member of the
+`lock` group and `uucp` group in addition to the `dialout` group, in order to access
+the device file. This can be done for an user `xyz` using the following commands.
+
+------
+# usermod -a -G lock xyz
+# usermod -a -G uucp xyz
+------
 
 Java API
 ^^^^^^^^
