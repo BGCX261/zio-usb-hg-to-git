@@ -27,7 +27,7 @@ large_images = frc10.png frc14.png zio-blocks.png h-bridge.png
 
 tutorial_images = led.png switch.png io-expander.png pot.png led-brightness.png spi-eeprom.png
 
-images = $(tutorial_images) $(large_images) 
+images = $(tutorial_images) $(large_images) $(small_images)
 
 code = 
 
