@@ -2,8 +2,8 @@ ZIO, Motherboard
 ================
 Zilogic Systems
 :Subtitle: User Manual
-:Date:     Jul 2013
-:Revision: 1.4
+:Date:     Oct 2013
+:Revision: 2.0
 
 Introduction
 ------------
@@ -778,11 +778,9 @@ The equivalent code for the currently performed operation is indicated
 in the Java and Python tabs. This is an easy way to learn the Java and
 Python API.
 
-Legal Information
------------------
+== Appendix A: Legal Information
 
-Copying
-~~~~~~~
+=== Copying
 
 This work is licensed under the Creative Commons Attribution-Share
 Alike 2.5 India License. To view a copy of this license, visit
@@ -790,35 +788,158 @@ http://creativecommons.org/licenses/by-sa/2.5/in/ or send a letter to
 Creative Commons, 171 Second Street, Suite 300, San Francisco,
 California, 94105, USA.
 
-Disclaimers
-~~~~~~~~~~~
+=== Limited Hardware Warranty
 
-.NO WARRANTY
+The warranties provided by Zilogic Systems in this Limited Hardware
+Warranty apply only to Hardware Products you purchase for your use,
+and not for resale. The term "Hardware Product" means a computing
+device with a specific function and limited configuration
+ability.
 
-ZILOGIC SYSTEMS' DEVELOPMENT KITS (AND TECHNICAL SUPPORT, IF ANY) ARE
-PROVIDED "AS IS" AND WITHOUT ANY WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED. TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAWS,
-ZILOGIC SYSTEMS EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
-NONINFRINGEMENT. ZILOGIC SYSTEMS DOES NOT WARRANT THAT THE FUNCTIONS
-CONTAINED IN ZILOGIC SYSTEMS' DEVELOPMENT KITS WILL MEET YOUR
-REQUIREMENTS, OR THAT THE OPERATION WILL BE UNINTERRUPTED OR
-ERROR-FREE, OR THAT DEFECTS IN ZILOGIC SYSTEMS' DEVELOPMENT KITS WILL
-BE CORRECTED. FURTHERMORE, ZILOGIC SYSTEMS DOES NOT WARRANT OR MAKE
-ANY REPRESENTATIONS REGARDING THE USE OR THE RESULTS OF THE USE OF THE
-ZILOGIC SYSTEMS' DEVELOPMENT KITS IN TERMS OF THEIR CORRECTNESS,
-ACCURACY, RELIABILITY, OR OTHERWISE. SOME JURISDICTIONS DO NOT ALLOW
-THE EXCLUSION OF IMPLIED WARRANTIES, SO THE ABOVE EXCLUSION MAY NOT
-APPLY OR MAY BE LIMITED.
+==== LIMITED HARDWARE WARRANTY
 
-.Limitation of Liability
+Zilogic Systems warrants that the hardware components of its Hardware
+Product shall be free from material defects in design, materials, and
+workmanship and will function, under normal use and circumstances, in
+accordance with the documentation provided, for a period of one (1)
+year from the date of purchase of the Hardware Product.
+
+Your sole and exclusive remedy, and Zilogic Systems' sole and
+exclusive liability for defective hardware components, shall be that
+Zilogic Systems, subject to the terms and conditions of this Section,
+and solely upon confirmation of a defect or failure of a hardware
+component to perform as warranted, shall at its sole option, either
+repair or replace the nonconforming hardware component. All
+replacement parts furnished to you under this warranty shall be
+refurbished and equivalent to new, and shall be warranted as new for
+the remainder of the original warranty period. All defective parts,
+which have been replaced, shall become the property of Zilogic
+Systems. All defective parts that have been repaired shall remain your
+property.
+
+==== EXCLUSIONS
+
+The foregoing warranties and remedies shall be void as to any Hardware
+Products damaged or rendered unserviceable by one or more of the
+following: (1) improper or inadequate maintenance by anyone other than
+Zilogic Systems or Zilogic Systems' authorized engineers, (2) interfacing
+supplied by anyone other than Zilogic Systems, (3) modifications,
+alterations or additions to the Hardware Products by personnel not
+certified by Zilogic Systems or Zilogic Systems' authorized engineers to
+perform such acts, or other unauthorized repair, installation or other
+causes beyond Zilogic Systems' control, (4) unreasonable refusal to agree
+with engineering change notice programs, (5) negligence by any person
+other than Zilogic Systems or Zilogic Systems' authorized engineers, (6)
+misuse, abuse, accident, electrical irregularity, theft, vandalism,
+fire, water or other peril, (7) damage caused by containment and/or
+operation outside the environmental specifications for the Hardware
+Products, (8) alteration or connection of the Hardware Products to
+other systems, equipment or devices (other than those specifically
+approved by Zilogic Systems) not in accordance to the board and on-board
+device specifications (9) any use that is inconsistent with the user
+manual supplied with the Hardware Product. The warranty period is not
+extended if Zilogic Systems repairs or replaces a warranted product or any
+parts. Zilogic Systems may change the availability of limited hardware
+warranties, at its discretion, but any changes will not be
+retroactive.
+
+==== HARDWARE RETURN PROCEDURES
+
+If a Hardware Product or one of its component parts does not function
+as warranted during the warranty period, and such nonconformance can
+be verified by Zilogic Systems, Zilogic Systems, at its election, will
+provide either return and replacement service or replacement with a
+refurbished part/unit for the Hardware Product under the type of
+warranty service Zilogic Systems designates for that Hardware
+Product. A defective Hardware Product or one of its component parts
+may only be returned to Zilogic Systems upon Zilogic Systems' prior
+written approval. Any such approval shall reference an RMA number
+issued by an authorized Zilogic Systems service representative. If you
+do not register the Hardware Product with Zilogic Systems, you may be
+required to present proof of purchase as evidence of your entitlement
+to warranty service. The Hardware Product's serial number will be
+required for all RMA cases.
+
+Transportation costs, if any, incurred in connection with the return
+of a defective item to Zilogic Systems shall be borne by You. Any
+transportation costs incurred in connection with the redelivery of a
+repaired or replacement item to You by Zilogic Systems shall be borne
+by Zilogic Systems; provided, however, that if Zilogic Systems
+determines, in its sole discretion, that the allegedly defective item
+is not covered by the terms and conditions of the warranty or that a
+warranty claim is made after the warranty period, the cost of the
+repair by Zilogic Systems, including all shipping expenses, shall be
+reimbursed by You.
+
+==== HARDWARE REPLACEMENT PROCEDURES
+
+Zilogic Systems will attempt to diagnose and resolve your problem over
+the phone or e-mail. Upon determination of the hardware issue is
+related to a malfunction of one of the Hardware Product components, an
+RMA process will be initiated by Zilogic Systems. 
+
+For Warranty Replacement service, it is required that you deliver the
+faulty unit to a location Zilogic Systems designates, and provide
+courier name and tracking number to Zilogic Systems. After the Faulty
+unit is returned to Zilogic Systems, Zilogic Systems will use
+commercially reasonable efforts to ship the replacement hardware
+within fourteen (14) business days. Actual delivery times may vary
+depending on availability of the spares and customer's location.
+
+==== ADDITIONAL RESPONSIBILITIES
+
+You agree:
+
+  * To provide Zilogic Systems or its partner with sufficient and safe
+    access to your facilities to permit Zilogic Systems to fulfill its
+    obligations.
+
+  * To ship back the faulty Hardware Product (or replaceable unit)
+    suitably packaged, quoting the RMA number, to the Zilogic Systems
+    designated location.
+
+  * You shall ship the faulty Hardware Product once Zilogic Systems
+    approves the RMA and provide the courier name and tracking number.
+
+  * To securely erase from any Hardware Product you return to Zilogic
+    Systems for any reason all programs and data not provided by
+    Zilogic Systems with the Hardware Product. You acknowledge that in
+    order to perform its responsibilities under this Limited Hardware
+    Warranty, Zilogic Systems may ship all or part of the Hardware
+    Product or its software to third party locations around the world,
+    and you authorize Zilogic Systems to do so.
+
+==== LIMITATION OF LIABILITY
 
 Zilogic Systems' development kits are not designed, authorized or
 warranted to be suitable for use in medical, military, aircraft, space
 or life support equipment, not in applications where failure or
 malfunction of a Zilogic Systems product can resonably be expected to
 result in personal injury, death or severe property or environmental
-damage. Zilogic Systems accepts no liability for inclusion and/or use
-of Zilogic Systems' development kits in such equipment or applications
-and therefore such inclusion and/or use is at the customer's own risk.
+damage.
+
+NOTWITHSTANDING ANYTHING ELSE IN THIS AGREEMENT OR OTHERWISE, NEITHER
+ZILOGIC SYSTEMS NOR ITS SUPPLIERS WILL BE LIABLE WITH RESPECT TO ANY
+SUBJECT MATTER OF THIS AGREEMENT UNDER ANY CONTRACT, NEGLIGENCE,
+STRICT LIABILITY, OR OTHER LEGAL OR EQUITABLE THEORY, REGARDLESS OF
+WHETHER ZILOGIC SYSTEMS OR ITS SUPPLIERS WERE ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES, FOR: (i) ANY PUNITIVE, INCIDENTAL OR
+CONSEQUENTIAL DAMAGES OR LOST DATA OR LOST PROFITS; OR (ii) FOR COSTS
+OF PROCUREMENT OF SUBSTITUTE GOODS, TECHNOLOGY OR SERVICES; OR (iii)
+FOR ANY CLAIMS BASED ON ANY ERROR, DEFECT OR NONCONFORMITY IN THE
+PRODUCTS OR SERVICE, FOR ANY AMOUNT IN EXCESS OF THE PRICE PAID TO
+ZILOGIC SYSTEMS FOR SUCH DEFECTIVE PRODUCT(S) OR SERVICE; OR (IV) FOR
+ALL OTHER CLAIMS NOT RELATED TO AN ERROR, DEFECT OR NONCONFORMITY IN
+THE PRODUCTS, ANY AMOUNTS IN EXCESS IN THE AGGREGATE OF THE AMOUNT
+PAID TO ZILOGIC SYSTEMS HEREUNDER DURING THE THREE (3) MONTHS
+PRECEDING THE DATE THE CAUSE OF ACTION AROSE.  
+
+WARRANTY DISCLAIMER. EXCEPT AS STATED HEREIN, ZILOGIC SYSTEMS MAKES NO
+WARRANTIES WITH RESPECT TO any PRODUCT, license or SERVICE AND
+DISCLAIMS ALL Statutory or IMPLIED WARRANTIES, INCLUDING WITHOUT
+LIMITATION WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, or arising from a course of dealing or usage of trade and any
+WARRANTIES OF NONINFRINGEMENT. ZILOGIC SYSTEMS DOES NOT WARRANT THAT
+THE ZILOGIC SYSTEMS PRODUCT(s) WILL MEET any REQUIREMENTS or THAT THE
+OPERATION OF ZILOGIC SYSTEMS PRODUCTS WILL BE UNINTERRUPTED OR ERROR
+FREE.
